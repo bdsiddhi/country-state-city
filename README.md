@@ -6,6 +6,12 @@ Data taken from:
 
 https://github.com/hiiamrohit/Countries-States-Cities-database
 
+Example list of data : 
+
+http://lab.iamrohit.in/php_ajax_country_state_city_dropdown/
+
+NOTE : State list changed as per project requirement for this.
+
 # Install
 `npm i country-state-city`
 
