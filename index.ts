@@ -31,7 +31,7 @@ export { ICountry, ICity, IState} from './src/interface';
 	},
 	getAllCountries: function (): ICountry[] {
 		return countryList;
-	}
+	},
 	getAllCountriesForLanguage: function (language:string): ICountry[] 
 	{
 		if (language === 'ru')
@@ -42,7 +42,7 @@ export { ICountry, ICity, IState} from './src/interface';
 		{
 			return countryList;
 		}
-	}
+	},
 	getStateByIdForLanguage: function (id: string,language: string): IState {
 		if (language === 'ru')
 		{
