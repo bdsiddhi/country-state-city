@@ -43,14 +43,20 @@ export { ICountry, ICity, IState} from './src/interface';
 			return countryList;
 		}
 	},
-	getStateByIdForLanguage: function (id: string,language: string): IState {
+	getStatesOfCountryForLanguage: function (countryId: string,language: string): IState[] {
 		if (language === 'ru')
 		{
-			return _findEntry(stateListru, id);
+			var states = stateListru.filter(function (value, index) {
+				return value.country_id === countryId
+			})
+			return states.sort(compare)
 		}
 		else
 		{
-			return _findEntry(stateList, id);
+			var states = stateList.filter(function (value, index) {
+				return value.country_id === countryId
+			})
+			return states.sort(compare)
 		}
 		
 	},
