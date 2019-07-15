@@ -2,20 +2,20 @@
   "name": "country-state-city",
   "version": "1.0.0",
   "description": "Library for fetching Country, its States and Cities",
-  "main": "dist/index.js",
+  "main": "index.ts",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc -p tsconfig.json"
   },
-  "author": "harpreetkhalsagtbit@gmail.com",
+  "author": "business.siddhi@gmail.com",
   "license": "GPL-3.0",
   "directories": {
     "lib": "lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harpreetkhalsagtbit/country-state-city.git"
+    "url": "git+https://github.com/bdsiddhi/country-state-city.git"
   },
   "husky": {
     "hooks": {
@@ -32,9 +32,9 @@
     "Filter"
   ],
   "bugs": {
-    "url": "https://github.com/harpreetkhalsagtbit/country-state-city/issues"
+    "url": "https://github.com/bdsiddhi/country-state-city/issues"
   },
-  "homepage": "https://github.com/harpreetkhalsagtbit/country-state-city#readme",
+  "homepage": "https://github.com/bdsiddhi/country-state-city#readme",
   "devDependencies": {
     "@types/jest": "^24.0.12",
     "husky": "^1.3.1",
