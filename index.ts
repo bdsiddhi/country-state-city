@@ -1,6 +1,9 @@
 import countryList from './lib/country.json';
 import stateList from './lib/state.json';
+import countryListru from './lib/country_ru.json';
+import stateListru from './lib/state_ru.json';
 import cityList from './lib/city.json';
+
 import { ICountry, ICity, IState} from './src/interface';
 export { ICountry, ICity, IState} from './src/interface';
 
@@ -29,6 +32,29 @@ export { ICountry, ICity, IState} from './src/interface';
 	getAllCountries: function (): ICountry[] {
 		return countryList;
 	}
+	getAllCountriesForLanguage: function (language:string): ICountry[] 
+	{
+		if (language === 'ru')
+		{
+			return countryListru;	
+		}
+		else
+		{
+			return countryList;
+		}
+	}
+	getStateByIdForLanguage: function (id: string,language: string): IState {
+		if (language === 'ru')
+		{
+			return _findEntry(stateListru, id);
+		}
+		else
+		{
+			return _findEntry(stateList, id);
+		}
+		
+	},
+
 }
 
 let _findEntry = (source: any, id: string) => {
